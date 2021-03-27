@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+}
+
+#root {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto calc(100vh - 80px) auto;
+    position: relative;
+}
+
+:root {
+    --primary-color: #3d3d3d;
+    --secondary-color: #c5cab0;
+    --white-color: #ffffff;
+}
