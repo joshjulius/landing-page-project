@@ -1,2 +1,1 @@
-# restaurant-website
- 
+# landing-page-project
