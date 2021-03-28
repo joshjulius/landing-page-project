@@ -6,14 +6,14 @@ header {
 }
 
 h1 {
-    color: var(--secondary-color);
     margin: 0;
     margin-left: 20px;
     font-weight: normal;
     font-size: 1.5rem;
     align-self: center;
     position: relative;
-    z-index: 2;
+    z-index: 3;
+    max-width: 200px;
 }
 
 button {
@@ -21,7 +21,7 @@ button {
     background-color: transparent;
     display: grid;
     cursor: pointer;
-    z-index:2;
+    z-index:3;
 }
 
 button div {
@@ -67,23 +67,23 @@ button div.close::after {
     transform: rotate(90deg);
 }
 
-nav.nav {
+nav {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+.navWrapperMobile {
     transform: translateY(-100vh);
     position: absolute;
     top: 0px;
     width: 100%;
     height: 100vh;
-    z-index: 1;
     background-color: var(--primary-color);
-    transition: transform 1s 0.5s cubic-bezier(1,.01,0,.98);
+    z-index: 2;
 }
 
-nav.nav.show {
-    transform: translateY(0);
-    transition: transform 0.5s cubic-bezier(1,.02,.26,.98);
-}
-
-ul {
+.navWrapperMobile ul {
     padding: 0;
     margin: 0;
     font-size: 1.5rem;
@@ -91,34 +91,15 @@ ul {
     top: 80px;
 }
 
-li {
+.navWrapperMobile li {
     list-style: none;
     text-align: center;
     padding: 5vh 0;
     opacity: 0;
-    transform: translateY(-50px);
-    transition: all 0.5s ease;
 }
 
-li.menu {
-    transition-delay: 0.4s;
-}
-
-li.about {
-    transition-delay: 0.45s;
-}
-
-li.hoursAndLocation {
-    transition-delay: 0.5s;
-}
-
-li.contact {
-    transition-delay: 0.55s;
-}
-
-li.animate {
-    opacity: 1;
-    transform: translateY(0px);
+.navWrapperDesktop {
+    display: none;
 }
 
 a {
@@ -143,4 +124,35 @@ header a:hover {
 
 li a:hover::after {
     width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    button {
+        display: none;
+        z-index: -1;
+    }
+
+    .navWrapperMobile {
+        display: none;
+    }
+
+    .navWrapperDesktop {
+        display: grid;
+        height: 80px;
+    }
+    
+    .navWrapperDesktop ul {
+        font-size: 1.5rem;
+        position: relative;
+        align-self: center;
+        justify-self: right;
+    }
+    
+    .navWrapperDesktop li {
+        list-style: none;
+        padding-right: 30px;
+        display: inline;
+    }
+
 }

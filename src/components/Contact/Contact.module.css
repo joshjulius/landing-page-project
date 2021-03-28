@@ -1,0 +1,21 @@
+.contact {
+    background-color: rgba(0,0,0,0.5);
+    display: grid;
+}
+
+.contact::before {
+    content: '';
+    background: url("../../assets/sushi4.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.contact p {
+    width: 80%;
+    place-self: center;
+    background-color: rgba(0,0,0,0.8);
+}
