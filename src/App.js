@@ -4,6 +4,7 @@ import styles from "./App.module.css";
 import { Header, Main, Menu, About, Contact, Footer } from "./components";
 
 const App = () => {
+
   return (
     <BrowserRouter>
       <Header />

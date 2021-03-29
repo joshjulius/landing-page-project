@@ -4,7 +4,7 @@ import styles from "./Menu.module.css";
 const Menu = () => {
     return (
         <div className={styles.menu}>
-            <p>Hello from Menu</p>
+            <h2>menu</h2>
         </div>
     );
 }

@@ -5,6 +5,7 @@
 body {
     font-family: 'Lexend', sans-serif;
     color: var(--secondary-color);
+    background-color: #000;
 }
 
 #root {

@@ -12,10 +12,26 @@
     width: 100%;
     height: 100%;
     z-index: -1;
+    animation: fadeIn 500ms;
 }
 
-.contact p {
+.contact h2 {
+    place-self: center;
+    /* background-color: rgba(0,0,0,0.8); */
+    animation: fadeIn 1s 0.3s backwards;
+}
+
+/* .contact p {
     width: 80%;
     place-self: center;
     background-color: rgba(0,0,0,0.8);
+    animation: fadeIn 1s 0.3s backwards;
+} */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
 }

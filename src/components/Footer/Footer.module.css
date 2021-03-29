@@ -7,6 +7,17 @@ footer h3 {
     margin-top: 50px;
 }
 
+.address,
+.hours {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.address.show,
+.hours.show {
+    opacity: 1;
+}
+
 footer:last-child {
     padding-bottom: 50px;
 }
