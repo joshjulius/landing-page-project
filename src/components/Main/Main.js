@@ -6,7 +6,7 @@ const Main = () => {
 
     return (
         <main>
-            <h2><a href="https://www.skipthedishes.com/naru-sushi" target="_blank">delivery</a> or <Link to="/contact">dine-in</Link></h2>
+            <h2><a href="https://www.skipthedishes.com/naru-sushi" target="_blank">delivery</a> or <Link to="/reservation">dine-in</Link></h2>
         </main>
     );
 }

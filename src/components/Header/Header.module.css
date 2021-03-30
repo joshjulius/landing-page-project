@@ -173,6 +173,10 @@ li a:hover::after {
     width: 100%;
 }
 
+path {
+    fill: var(--secondary-color);
+}
+
 /* .fadeIn {
     animation: fadeIn 1s 0.3s backwards;
 }
@@ -215,7 +219,7 @@ li a:hover::after {
         transition: opacity 1s 1.3s;
     }
     
-    .navWrapperDesktop li.contact {
+    .navWrapperDesktop li.reservation {
         transition: opacity 1s 1.4s;
     }
 

@@ -1,12 +1,12 @@
-.about {
+.reservation {
     background-color: rgba(0,0,0,0.5);
     display: grid;
     grid-template-rows: auto;
 }
 
-.about::before {
+.reservation::before {
     content: '';
-    background: url("../../assets/sushi2.jpg") no-repeat center center/cover;
+    background: url("../../assets/sushi4.jpg") no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -16,7 +16,7 @@
     animation: fadeIn 500ms;
 }
 
-.about div {
+.reservation div {
     place-self: center;
     width: 80%;
     border: 1px solid var(--secondary-color);
@@ -27,13 +27,13 @@
     background-color: rgba(0,0,0,0.5);
 }
 
-.about h2,
-.about p {
+.reservation h2,
+.reservation p {
     margin: 0;
     transition: font-size 500ms;
 }
 
-.about h2 {
+.reservation h2 {
     margin-bottom: 1rem;
     background: linear-gradient(to right, var(--secondary-color), rgb(99, 92, 51));
     color: #000;
@@ -50,14 +50,16 @@
 
 @media only screen and (min-width: 1024px) {
     
-    .about div {
+    .reservation div {
         border-width: 2px;
     }
-    .about h2 {
+    
+    .reservation h2 {
         font-size: 2.5rem;
         transition: font-size 500ms;
     }
-    .about p {
+
+    .reservation p {
         font-size: 1.5rem;
         transition: font-size 500ms;
     }

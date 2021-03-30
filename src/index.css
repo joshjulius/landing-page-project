@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Lexend', sans-serif;
+    line-height: 1.5;
     color: var(--secondary-color);
     background-color: #000;
 }
