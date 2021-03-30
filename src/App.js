@@ -5,6 +5,10 @@ import { Header, Main, Menu, About, Contact, Footer } from "./components";
 
 const App = () => {
 
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <BrowserRouter>
       <Header />

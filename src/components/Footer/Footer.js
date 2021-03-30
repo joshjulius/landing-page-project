@@ -3,34 +3,78 @@ import styles from "./Footer.module.css";
 
 const Footer = () => {
 
-    window.addEventListener('scroll', () => {
-        const scrolled = window.scrollY;
-        if (window.innerWidth < 1024) {
-            if (scrolled > 185) {
-                document.querySelector(".Footer_address__2-E2i").classList.add(`${styles.show}`);
-            }
-            if (scrolled > 350) {
-                document.querySelector(".Footer_hours__16kHc").classList.add(`${styles.show}`);
-            }
-            if (scrolled <= 185) {
-                document.querySelector(".Footer_address__2-E2i").classList.remove(`${styles.show}`);
-            }
-            if (scrolled <= 350) {
-                document.querySelector(".Footer_hours__16kHc").classList.remove(`${styles.show}`);
-            }
-        } else {
-            if (scrolled > 160) {
-                document.querySelector(".Footer_address__2-E2i").classList.add(`${styles.show}`);
-                document.querySelector(".Footer_hours__16kHc").classList.add(`${styles.show}`);
-            }
-            if (scrolled <= 160) {
-                document.querySelector(".Footer_address__2-E2i").classList.remove(`${styles.show}`);
-                document.querySelector(".Footer_hours__16kHc").classList.remove(`${styles.show}`);
-            }
+    window.addEventListener('resize', () => {
+        
+        const topAddress = (window.innerWidth < 1024) ? 80 : 100;
+        const bottomAddress = (window.innerWidth < 1024) ? 150 : 290;
+        const topHours = (window.innerWidth < 1024) ? 230 : 100;
+        const bottomHours = (window.innerWidth < 1024) ? 430 : 290;
+    
+        const addressOpacity = (top, bottom) => {
+                const addressDiv = document.querySelector(".Footer_address__2-E2i");
+                let opacity = (window.scrollY - top) / (bottom - top);
+                if (window.scrollY < topAddress) {
+                    addressDiv.style.opacity = 0;
+                } else if (window.scrollY > bottomAddress) {
+                    addressDiv.style.opacity = 1;
+                } else {
+                    addressDiv.style.opacity = opacity;
+                }
         }
+            
+        const hoursOpacity = (top, bottom) => {
+                const hoursDiv = document.querySelector(".Footer_hours__16kHc");
+                let opacity = (window.scrollY - top) / (bottom - top);
+                if (window.scrollY < topHours) {
+                    hoursDiv.style.opacity = 0;
+                } else if (window.scrollY > bottomHours) {
+                    hoursDiv.style.opacity = 1;
+                } else {
+                    hoursDiv.style.opacity = opacity;
+                }
+            
+        }   
+        
+        addressOpacity(topAddress, bottomAddress);
+        hoursOpacity(topHours, bottomHours);
+
     });
 
+    window.addEventListener('scroll', () => {
+        
+        const topAddress = (window.innerWidth < 1024) ? 80 : 100;
+        const bottomAddress = (window.innerWidth < 1024) ? 150 : 290;
+        const topHours = (window.innerWidth < 1024) ? 230 : 100;
+        const bottomHours = (window.innerWidth < 1024) ? 430 : 290;
+
+        const addressOpacity = (top, bottom) => {
+            const addressDiv = document.querySelector(".Footer_address__2-E2i");
+            let opacity = (window.scrollY - top) / (bottom - top);
+            if (window.scrollY < topAddress) {
+                addressDiv.style.opacity = 0;
+            } else if (window.scrollY > bottomAddress) {
+                addressDiv.style.opacity = 1;
+            } else {
+                addressDiv.style.opacity = opacity;
+            }
+        }
+        
+        const hoursOpacity = (top, bottom) => {
+            const hoursDiv = document.querySelector(".Footer_hours__16kHc");
+            let opacity = (window.scrollY - top) / (bottom - top);
+            if (window.scrollY < topHours) {
+                hoursDiv.style.opacity = 0;
+            } else if (window.scrollY > bottomHours) {
+                hoursDiv.style.opacity = 1;
+            } else {
+                hoursDiv.style.opacity = opacity;
+            }
+        }   
     
+        addressOpacity(topAddress, bottomAddress);
+        hoursOpacity(topHours, bottomHours);
+
+    });
 
     return (
         <footer>

@@ -158,7 +158,7 @@ const Header = () => {
         );
     });
 
-    // Finish navbar, add fade ins, preloader, smooth scrolling, smooth media query and link transitions, add content
+    //smooth media query, add content
 
     return (
         <>

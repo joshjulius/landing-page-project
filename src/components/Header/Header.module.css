@@ -47,7 +47,8 @@ button {
     cursor: pointer;
     z-index:3;
     opacity: 0;
-    transition: opacity 1s 1.2s;
+    transform: translateY(0);
+    transition: opacity 1s 1.2s, transform 500ms cubic-bezier(.91,-0.5,.39,1.33);
 }
 
 button.show {
@@ -129,7 +130,23 @@ nav {
 }
 
 .navWrapperDesktop {
-    display: none;
+    display: grid;
+    height: 80px;
+}
+
+.navWrapperDesktop ul {
+    font-size: 1.5rem;
+    position: relative;
+    align-self: center;
+    justify-self: right;
+    transform: translateY(-100px);
+    transition: transform 500ms cubic-bezier(.91,-0.5,.39,1.33);
+}
+
+.navWrapperDesktop li {
+    list-style: none;
+    padding-right: 30px;
+    display: inline;
 }
 
 a {
@@ -175,30 +192,18 @@ li a:hover::after {
     }
 
     button {
-        display: none;
-        z-index: -1;
+        transform: translateY(-100px);
     }
 
     .navWrapperMobile {
         display: none;
     }
-
-    .navWrapperDesktop {
-        display: grid;
-        height: 80px;
-    }
     
     .navWrapperDesktop ul {
-        font-size: 1.5rem;
-        position: relative;
-        align-self: center;
-        justify-self: right;
+        transform: translateY(0);
     }
     
     .navWrapperDesktop li {
-        list-style: none;
-        padding-right: 30px;
-        display: inline;
         opacity: 0;
     }
 
