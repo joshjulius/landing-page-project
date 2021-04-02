@@ -35,8 +35,7 @@
 
 .reservation h2 {
     margin-bottom: 1rem;
-    background: linear-gradient(to right, var(--secondary-color), rgb(99, 92, 51));
-    color: #000;
+    border-bottom: 1px solid var(--secondary-color);
     border-radius: 5px;
 }
 

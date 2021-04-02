@@ -10,7 +10,7 @@ const App = () => {
   }
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/landing-page-project">
       <Header />
       <Route exact path="/" component={Main} />
       <Route path="/menu" component={Menu} />
