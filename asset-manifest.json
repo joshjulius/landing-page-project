@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/landing-page-project/static/css/main.17accc9c.chunk.css",
+    "main.js": "/landing-page-project/static/js/main.201276a8.chunk.js",
+    "main.js.map": "/landing-page-project/static/js/main.201276a8.chunk.js.map",
+    "runtime-main.js": "/landing-page-project/static/js/runtime-main.2dbf580e.js",
+    "runtime-main.js.map": "/landing-page-project/static/js/runtime-main.2dbf580e.js.map",
+    "static/js/2.43ff54f4.chunk.js": "/landing-page-project/static/js/2.43ff54f4.chunk.js",
+    "static/js/2.43ff54f4.chunk.js.map": "/landing-page-project/static/js/2.43ff54f4.chunk.js.map",
+    "static/js/3.b7f10818.chunk.js": "/landing-page-project/static/js/3.b7f10818.chunk.js",
+    "static/js/3.b7f10818.chunk.js.map": "/landing-page-project/static/js/3.b7f10818.chunk.js.map",
+    "index.html": "/landing-page-project/index.html",
+    "static/css/main.17accc9c.chunk.css.map": "/landing-page-project/static/css/main.17accc9c.chunk.css.map",
+    "static/js/2.43ff54f4.chunk.js.LICENSE.txt": "/landing-page-project/static/js/2.43ff54f4.chunk.js.LICENSE.txt",
+    "static/media/Main.module.css": "/landing-page-project/static/media/sushi.60c7fcfd.jpg",
+    "static/media/About.module.css": "/landing-page-project/static/media/sushi2.08e34071.jpg",
+    "static/media/Menu.module.css": "/landing-page-project/static/media/sushi3.41b75283.jpg",
+    "static/media/Reservation.module.css": "/landing-page-project/static/media/sushi4.e6fa1063.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2dbf580e.js",
+    "static/js/2.43ff54f4.chunk.js",
+    "static/css/main.17accc9c.chunk.css",
+    "static/js/main.201276a8.chunk.js"
+  ]
+}
