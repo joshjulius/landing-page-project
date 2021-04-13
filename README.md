@@ -1,5 +1,5 @@
 # Restaurant website project
-A static, minimalistic website for a mock restaurant.
+A static, minimalistic [website](https://joshjulius.github.io/landing-page-project/#/) for a mock restaurant.
 
 ## What I learned by building this project
 - CSS
