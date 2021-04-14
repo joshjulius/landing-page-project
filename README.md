@@ -11,7 +11,7 @@ A static, minimalistic [website](https://joshjulius.github.io/landing-page-proje
 
 ## What I would like to do next
 - [ ] Add content
-- [ ] Improve the UI
+- [ ] Spend more time thinking about the design
 - [ ] Add testing
 - [ ] Contact local restaurants/businesses to offer them this website for use
 - [ ] Integrate a CMS like strapi.io
